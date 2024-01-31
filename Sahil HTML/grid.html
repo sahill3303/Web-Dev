@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            /* fr = fraction */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 20px;
+            grid-auto-columns: minmax(50px,auto);
+            grid-auto-rows: minmax(100px,auto);
+            column-gap: 50px;
+        }
+
+        .items{
+            background-color: rgb(241, 168, 241);
+            border: 3px rgb(179, 14, 179) solid;
+            border-radius: 3px;
+        }
+            /*
+        #item-2{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        } */
+        #item-1{
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        .item-1-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .nested-item{
+            border: 3px solid palevioletred;
+            border-radius: 3px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- div.items{box $}*6   use of $ in the following div to make multipleboxes with sequence -->
+        <div class="items item-1-container" id="item-1">
+            <div class="nested-item">box me box 1</div>
+            <div class="nested-item">box me box 2</div>
+            <div class="nested-item">box me box 3</div>
+        </div>
+        <div class="items" id="item-2">Box 2</div>
+        <div class="items">Box 3</div>
+        <div class="items">Box 4</div>
+        <div class="items">Box 5</div>
+    </div>
+</body>
+</html>

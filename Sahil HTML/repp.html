@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            color: rgb(134, 9, 9);
+            background-color: rgb(223, 212, 196);
+        }
+
+        .heading{
+            color: rgb(105, 57, 23);
+            text-align: center;
+            text-shadow: 1px 1px rebeccapurple;
+            font-size: 45px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .boxx{
+            border-radius: 20px;
+            border: 2px solid none;
+            padding: 6px;
+            width: 23%;
+            height: 190px;
+            margin-bottom: 40px;
+            background-color: rgb(179, 161, 137);
+        }
+
+        .container{
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            flex-flow: wrap;
+        }
+
+        h3{
+            color: #000;
+            font-size: 28px;
+            text-align: center;
+            background-color: inherit;
+            text-shadow: 1px 1px crimson;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        p,a,em{
+            font-size: 13px;
+            background-color: inherit;
+            text-align: justify;
+            line-height: 14px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(32, 14, 49);
+            font-size: 14px;
+        }
+
+        a:hover{
+            color: blue;
+            text-shadow: 1px 1px chartreuse;
+        }
+
+        @media screen and (max-width:1300px) {
+            .boxx{
+                width: 45%;
+                height: 170px;
+            }
+        }
+
+        
+        @media screen and (max-width:700px) {
+            .boxx{
+                width: 90%;
+                height: 170px;
+                overflow: hidden;
+            }
+            
+        }
+    </style>
+    </head>
+<body>
+    <header>
+    <h2 class="heading">Responsiveness</h2>
+    </header>
+    <main>
+        <!-- this is a container made under div for all 4 boxes -->
+        <div class="container">
+
+        <div class="boxx">
+            <h3>Sunny Portfolio</h3>
+            <p>this is my portfolio page, the first page made by me. you can check it out by
+                clicking <em><a href="/Sahil HTML/index.html">here</a></em>.
+            </p>
+        </div>
+        <div class="boxx">
+            <h3>Payment Form</h3>
+            <p>this is a payment gateway page, this page is made by me. you can check it out by
+                clicking <em><a href="/Sahil HTML/Payment_form.html">here</a></em>.
+            </p>
+        </div>
+        <div class="boxx">
+            <h3>Demo Website</h3>
+            <p>this is a demo website made for learning and experience, the first demo website made by me. you can check it out by
+                clicking <em><a href="/Sahil HTML/website.html">here</a></em>.
+            </p>
+        </div>        <div class="boxx">
+            <h3>Mega Project</h3>
+            <p>this is a Mega Project made under the guidance of Apna College, this webpage is made by me. you can check it out by
+                clicking <em><a href="/Sahil HTML/Mega1.html">here</a></em>.
+            </p>
+        </div>
+</div>
+    </main>
+</body>
+</html>

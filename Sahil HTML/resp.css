@@ -1,0 +1,79 @@
+/*I have chosen the whole page and gviven some styles.*/
+*{
+    box-sizing: border-box;
+    color: blanchedalmond;
+    background-color: rgb(37, 37, 37);
+    
+}
+/*Made the heading stylish.*/
+.heading{
+    color: aquamarine;
+    text-align: center;
+    font-size: 50px;
+    font-family:monospace;
+    text-shadow: 3px 4px rgb(42, 148, 148);
+}
+/*Then with the class box, I added some styles to our 4 boxes.*/
+.box{
+    border: 2px solid rgb(88, 87, 87);
+    border-radius: 25px;
+    padding: 5px;
+    margin-bottom:40px;
+    background-color: rgb(88, 87, 87);
+    width: 24%;
+    height:200px;
+
+}
+/*Then a class for whole of the four boxes, with some new features, found on w3schools.*/
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;  
+}
+/*Then comes the name of the channel.*/
+h2{
+    color: rgb(116, 241, 237);
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+    background-color: inherit;
+    text-shadow: 2px 2px rgb(42, 148, 148);
+}
+/*All the elements under div tag, I have given them same kind of styles.*/
+p,em,a{
+    background-color: inherit;
+    text-align: justify;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 19px;
+    /*Then used hover  to differentiate the link from the text.*/
+}
+a:hover{
+    color:rgb(163, 203, 230);
+}
+/*Then some style for our links.*/
+a{
+    text-decoration: none;
+    color: rgb(194, 231, 255);
+    font-size: 20px;
+}
+
+/*And our final and amin style, responsiveness media quaries.*/
+
+/*First at 1330px, I have given it 45% to let just 2 boxes in one row. */
+@media screen and (max-width:1300px) {
+    .box{
+         width: 45%;
+         height: 175px;
+    }
+}
+/*Then I have given 90% to make sure that only box comes in one row.*/
+@media screen and (max-width:700px) {
+    .box{
+         width: 90%;
+         height: 175px;
+         overflow:auto;
+         
+    }
+}
+/*Hope you like my content. All is because of you and your team. Thanks for your time*/
